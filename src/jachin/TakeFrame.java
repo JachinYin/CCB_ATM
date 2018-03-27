@@ -47,7 +47,7 @@ public class TakeFrame {
 		frameTake.setIconImage(Toolkit.getDefaultToolkit().getImage("E:\\Code\\java\\Eclipse-ATM\\CCB_ATM\\img\\CCB.png"));
 		frameTake.setTitle("中国建设银行ATM");
 		frameTake.setResizable(false);
-		frameTake.setBounds(100, 100, 1095, 750);
+		frameTake.setBounds(360, 150, 1095, 750);
 		frameTake.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frameTake.getContentPane().setLayout(null);
 

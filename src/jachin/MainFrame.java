@@ -48,7 +48,7 @@ public class MainFrame {
 		frameMain.setTitle("\u5EFA\u8BBE\u94F6\u884CATM");
 		frameMain.setIconImage(Toolkit.getDefaultToolkit().getImage("E:\\Code\\java\\Eclipse-ATM\\CCB_ATM\\img\\CCB.png"));
 		frameMain.setResizable(false);
-		frameMain.setBounds(100, 100, 1095, 750);
+		frameMain.setBounds(360, 150, 1095, 750);
 		frameMain.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frameMain.getContentPane().setLayout(null);
 		

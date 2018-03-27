@@ -247,7 +247,7 @@ public class LoginUI {
 				JOptionPane.showMessageDialog(null, "登陆成功", "提示", JOptionPane.INFORMATION_MESSAGE);
 				//AdminUI adminUI = new AdminUI();
 				frameAdmin.dispose();
-				AdminUI.main();
+				AdminUI.main(null);
 				
 			} else {
 				JOptionPane.showMessageDialog(null, "请输入正确密码", "提示", JOptionPane.INFORMATION_MESSAGE);

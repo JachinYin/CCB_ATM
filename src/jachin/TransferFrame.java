@@ -47,7 +47,7 @@ public class TransferFrame {
 		frameTransfer.setIconImage(
 				Toolkit.getDefaultToolkit().getImage("E:\\Code\\java\\Eclipse-ATM\\CCB_ATM\\img\\CCB.png"));
 		frameTransfer.setResizable(false);
-		frameTransfer.setBounds(100, 100, 1095, 750);
+		frameTransfer.setBounds(360, 150, 1095, 750);
 		frameTransfer.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frameTransfer.getContentPane().setLayout(null);
 

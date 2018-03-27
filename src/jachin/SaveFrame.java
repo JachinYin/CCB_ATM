@@ -46,7 +46,7 @@ public class SaveFrame {
 		frameSave.setTitle("\u5EFA\u8BBE\u94F6\u884CATM");
 		frameSave.setIconImage(Toolkit.getDefaultToolkit().getImage("E:\\Code\\java\\Eclipse-ATM\\CCB_ATM\\img\\CCB.png"));
 		frameSave.setResizable(false);
-		frameSave.setBounds(100, 100, 1095, 750);
+		frameSave.setBounds(360, 150, 1095, 750);
 		frameSave.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frameSave.getContentPane().setLayout(null);
 		

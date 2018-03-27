@@ -30,12 +30,13 @@ public class AdminUI {
 	private JTextField textField_carNum;
 	private JTextField textField_phone;
 	private String File = "E:\\Code\\java\\Eclipse-ATM\\CCB_ATM";
+	private JTextField textField_carNumLock;
 //	private String File = ".";
 
 	/**
 	 * Launch the application.
 	 */
-	public static void main() {
+	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -194,7 +195,7 @@ public class AdminUI {
 		panel_OpenAcc.add(button_OpenAcc);
 
 		JLabel label_bg11 = new JLabel("");
-		label_bg11.setBounds(0, 0, 1052, 482);
+		label_bg11.setBounds(0, 0, 1052, 475);
 		label_bg11.setIcon(new ImageIcon(File + "\\img\\bg.jpg"));
 		panel_OpenAcc.add(label_bg11);
 
@@ -220,7 +221,7 @@ public class AdminUI {
 		
 				JLabel label_bg12 = new JLabel("");
 				label_bg12.setIcon(new ImageIcon(File + "\\img\\bg.jpg"));
-				label_bg12.setBounds(0, 0, 1052, 482);
+				label_bg12.setBounds(0, 0, 1052, 475);
 				panel_DelAcc.add(label_bg12);
 
 		JButton btn_delAcc = new JButton("销户");
@@ -233,28 +234,50 @@ public class AdminUI {
 		panel_Loss.setLayout(null);
 
 		JTabbedPane tabbedPane_1 = new JTabbedPane(JTabbedPane.TOP);
-		tabbedPane_1.setBounds(0, 0, 1057, 493);
+		tabbedPane_1.setBounds(0, 0, 1057, 504);
 		panel_Loss.add(tabbedPane_1);
 
 		JPanel panel_ReportLoss = new JPanel();
 		tabbedPane_1.addTab("挂失", null, panel_ReportLoss, null);
+		panel_ReportLoss.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon("E:\\Code\\java\\Eclipse-ATM\\CCB_ATM\\img\\bg.jpg"));
+		lblNewLabel.setBounds(0, 0, 1052, 475);
+		panel_ReportLoss.add(lblNewLabel);
 
 		JPanel panel_CancelLoss = new JPanel();
 		tabbedPane_1.addTab("解挂", null, panel_CancelLoss, null);
+		panel_CancelLoss.setLayout(null);
+		
+		JLabel lblNewLabel_1 = new JLabel("");
+		lblNewLabel_1.setIcon(new ImageIcon("E:\\Code\\java\\Eclipse-ATM\\CCB_ATM\\img\\bg.jpg"));
+		lblNewLabel_1.setBounds(0, 0, 1052, 475);
+		panel_CancelLoss.add(lblNewLabel_1);
 
 		JPanel panel_lock = new JPanel();
 		tabbedPane.addTab(null, ico_lockAcc, panel_lock, "冻结解冻");
 		panel_lock.setLayout(null);
+		
+		JLabel label_inputCardNumLock = new JLabel("请输入卡号");
+		label_inputCardNumLock.setFont(new Font("幼圆", Font.PLAIN, 18));
+		label_inputCardNumLock.setBounds(45, 13, 171, 43);
+		panel_lock.add(label_inputCardNumLock);
 
-		JLabel label_4 = new JLabel("冻结");
-		label_4.setFont(new Font("幼圆", Font.PLAIN, 22));
-		label_4.setBounds(142, 13, 49, 46);
-		panel_lock.add(label_4);
+		JSeparator separator_2 = new JSeparator();
+		separator_1.setBounds(14, 70, 1024, 2);
+		panel_lock.add(separator_2);
 
-		JLabel label_5 = new JLabel("解冻");
-		label_5.setFont(new Font("幼圆", Font.PLAIN, 22));
-		label_5.setBounds(721, 13, 49, 46);
-		panel_lock.add(label_5);
+		textField_carNumLock = new JTextField();
+		textField_carNumLock.setFont(new Font("幼圆", Font.PLAIN, 18));
+		textField_carNumLock.setBounds(285, 155, 444, 43);
+		panel_lock.add(textField_carNumLock);
+		textField_carNum.setColumns(10);
+		
+		JLabel label = new JLabel("");
+		label.setIcon(new ImageIcon("E:\\Code\\java\\Eclipse-ATM\\CCB_ATM\\img\\bg.jpg"));
+		label.setBounds(0, 0, 1065, 502);
+		panel_lock.add(label);
 
 		JPanel panel_queryHistory = new JPanel();
 		tabbedPane.addTab(null, ico_queryHistory, panel_queryHistory, "查询交易历史");
