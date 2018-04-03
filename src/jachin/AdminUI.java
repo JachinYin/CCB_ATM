@@ -339,7 +339,8 @@ public class AdminUI {
 			String a = JOptionPane.showInputDialog(null, "请输入密码", "提示", JOptionPane.INFORMATION_MESSAGE);
 			// 判断卡号密码一致
 			if (true) {
-
+				//获取账户状态
+				System.out.println("");
 			} else{
 				JOptionPane.showMessageDialog(null, "密码错误", "错误", JOptionPane.ERROR_MESSAGE);
 			}
@@ -352,7 +353,7 @@ public class AdminUI {
 		String card = textField_lock.getText();
 		// 调用数据库方法判断卡号是否存在
 	}
-
+ 
 	public void yue() {
 		String card = textField_yue.getText();
 		// 调用数据库方法判断卡号是否存在
