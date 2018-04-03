@@ -14,12 +14,14 @@ import javax.swing.UIManager;
 
 public class MainFrame {
 
+	public static String card;
 	private JFrame frameMain;
 
 	/**
 	 * Launch the application.
 	 */
 	public static void main(String[] args) {
+		System.out.println("main"+card);
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
